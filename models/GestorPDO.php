@@ -1,14 +1,16 @@
 <?php
 
-class GestorPDO extends Connection{
+class GestorPDO{
+
+    private $db;
 
     public function __construct() {
-        parent::__construct();
+        $this->db = Connection::getInstance()->getConn();
     }
 
     public function listar() {
         $consulta="SELECT * FROM listaPeliculas";
-        $rtdo=$this->conn->query($consulta);
+        $rtdo=$this->db->query($consulta);
         $arrayPeliculas=[];
         while ($value = $rtdo->fetch(PDO::FETCH_ASSOC)){
             if ($value['tipoPelicula']=="Indie"){
