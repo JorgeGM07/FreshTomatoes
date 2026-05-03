@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap');
+ 
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #0d0f14;
+    color: #e8e8e8;
+    padding: 2rem 3rem;
+}
+ 
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #e8c84a;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #2a2d38;
+}
+ 
+/* --- BARRA DE SESIÓN --- */
+.sesion {
+    background-color: #161920;
+    border: 1px solid #2a2d38;
+    border-radius: 8px;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    color: #6b7080;
+}
+ 
+.sesion b {
+    color: #e8c84a;
+}
+ 
+/* --- ENLACES --- */
+a {
+    color: #e8c84a;
+    text-decoration: none;
+}
+ 
+a:hover {
+    color: #a8902e;
+    text-decoration: underline;
+}
+ 
+/* --- BOTÓN AGREGAR PELÍCULA --- */
+.btn-agregar {
+    display: inline-block;
+    background-color: #e8c84a;
+    color: #0d0f14;
+    font-weight: 500;
+    padding: 0.55rem 1.3rem;
+    border-radius: 8px;
+    margin-bottom: 1.25rem;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+ 
+.btn-agregar:hover {
+    background-color: #a8902e;
+    color: #0d0f14;
+    text-decoration: none;
+}
+ 
+/* --- TABLA --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #161920;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+    font-size: 0.9rem;
+}
+ 
+table th {
+    background-color: #1e2130;
+    color: #e8c84a;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.85rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #2a2d38;
+}
+ 
+table td {
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid #2a2d38;
+}
+ 
+table tr:last-child td {
+    border-bottom: none;
+}
+ 
+table tr:hover td {
+    background-color: rgba(232, 200, 74, 0.04);
+}
+ 
+/* --- ACCIONES EN TABLA --- */
+.btn-editar {
+    background-color: rgba(232, 200, 74, 0.12);
+    color: #e8c84a;
+    border: 1px solid rgba(232, 200, 74, 0.25);
+    padding: 0.3rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.82rem;
+    margin-right: 4px;
+    text-decoration: none;
+}
+ 
+.btn-editar:hover {
+    background-color: rgba(232, 200, 74, 0.22);
+    color: #e8c84a;
+    text-decoration: none;
+}
+ 
+.btn-eliminar {
+    background-color: rgba(192, 57, 43, 0.12);
+    color: #e57373;
+    border: 1px solid rgba(192, 57, 43, 0.25);
+    padding: 0.3rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.82rem;
+    text-decoration: none;
+}
+ 
+.btn-eliminar:hover {
+    background-color: rgba(192, 57, 43, 0.22);
+    color: #e57373;
+    text-decoration: none;
+}
+ 
+/* --- FORMULARIOS --- */
+form {
+    background-color: #161920;
+    border: 1px solid #2a2d38;
+    border-radius: 8px;
+    padding: 2rem 2.5rem;
+    max-width: 520px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.35);
+}
+ 
+label {
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: #6b7080;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    margin-top: 1rem;
+    margin-bottom: 0.35rem;
+}
+ 
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    background-color: #0d0f14;
+    border: 1.5px solid #2a2d38;
+    border-radius: 8px;
+    color: #e8e8e8;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+    padding: 0.65rem 0.9rem;
+    outline: none;
+}
+ 
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #e8c84a;
+    box-shadow: 0 0 0 3px rgba(232, 200, 74, 0.1);
+}
+ 
+select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%236b7080' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.9rem center;
+    padding-right: 2.2rem;
+}
+ 
+select option {
+    background-color: #161920;
+}
+ 
+textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+ 
+input[type="checkbox"] {
+    accent-color: #e8c84a;
+    margin-right: 0.5rem;
+}
+ 
+/* --- BOTÓN SUBMIT --- */
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+    background-color: #e8c84a;
+    color: #0d0f14;
+    border: none;
+    border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+ 
+button[type="submit"]:hover {
+    background-color: #a8902e;
+}
+ 
+/* --- MENSAJE DE ERROR --- */
+.error {
+    background-color: rgba(192, 57, 43, 0.12);
+    border: 1px solid rgba(192, 57, 43, 0.3);
+    border-radius: 8px;
+    padding: 0.65rem 1rem;
+    color: #e57373;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+ 
+/* --- LINKS SECUNDARIOS --- */
+.link-secundario {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 0.88rem;
+    color: #6b7080;
+}
+ 
+.link-secundario:hover {
+    color: #e8c84a;
+    text-decoration: none;
+}
